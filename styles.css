@@ -357,29 +357,6 @@ body {
     color: var(--text-dark);
     font-size: 1.1rem;
 }
-<!-- Galería -->
-<section class="gallery">
-  <div class="container">
-    <div class="gallery-container">
-      <div class="slide fade">
-        <img src="img/galeria1.jpg" alt="Proyecto 1">
-      </div>
-      <div class="slide fade">
-        <img src="img/galeria2.jpg" alt="Proyecto 2">
-      </div>
-      <div class="slide fade">
-        <img src="img/galeria3.jpg" alt="Proyecto 3">
-      </div>
-      <div class="slide fade">
-        <img src="img/galeria4.jpg" alt="Proyecto 4">
-      </div>
-
-      <!-- Flechas -->
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
-    </div>
-  </div>
-</section>
 
 /* Galería */
 .gallery {
@@ -424,6 +401,34 @@ body {
   border-radius: 50px;
   background-color: #fff; /* color de fondo dentro del contenedor */
   display: block;
+}
+
+/* --- Ajustes responsive para la galería --- */
+@media (max-width: 768px) {
+  .gallery-container {
+    aspect-ratio: auto;   /* Permite que el alto se adapte automáticamente */
+    height: auto;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;    /* Ocupa todo el ancho sin dejar márgenes */
+    border-radius: 30px;  /* Más suave para pantallas pequeñas */
+  }
+}
+
+/* --- Ajuste adicional para horizontal --- */
+@media (orientation: landscape) and (max-width: 992px) {
+  .gallery-container {
+    aspect-ratio: 16 / 9;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* Flechas de navegación */
