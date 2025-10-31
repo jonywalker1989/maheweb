@@ -1,0 +1,24 @@
+<<<<COMANDOS
+
+cd "C:\GitHubProyects\maheweb"
+
+
+git init
+
+
+git remote add origin https://github.com/jonywalker1989/maheweb.git
+
+
+git remote -v
+
+
+Deberías ver algo como:
+origin  https://github.com/jonywalker1989/maheweb.git (fetch)
+origin  https://github.com/jonywalker1989/maheweb.git (push)
+
+git add .
+git commit -m "Actualizo sitio web mahearquitectos.com"
+
+
+git branch -M main
+git push -u origin main
