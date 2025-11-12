@@ -5,9 +5,12 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     splash.style.opacity = "0";
+      setTimeout(() => {
+    splash.classList.add("hidden"); // fade out
     setTimeout(() => {
       splash.style.display = "none";
       main.style.display = "block";
+      document.body.classList.add("loaded"); // reactiva scroll
     }, 800); // espera a que termine la transición de opacidad
   }, 1000); // 2 segundos visibles
 });
