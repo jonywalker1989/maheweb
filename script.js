@@ -1,16 +1,16 @@
   // Fade in
-window.addEventListener("load", () => {
-  const splash = document.getElementById("splash");
-  const main = document.getElementById("main-content");
-
-  setTimeout(() => {
-    splash.style.opacity = "0";
-    setTimeout(() => {
-      splash.style.display = "none";
-      main.style.display = "block";
-    }, 800); // espera a que termine la transición de opacidad
-  }, 1000); // 2 segundos visibles
-});
+//window.addEventListener("load", () => {
+//  const splash = document.getElementById("splash");
+//  const main = document.getElementById("main-content");
+//
+  //setTimeout(() => {
+    //splash.style.opacity = "0";
+    //setTimeout(() => {
+      //splash.style.display = "none";
+      //main.style.display = "block";
+    //}, 800); // espera a que termine la transición de opacidad
+  //}, 1000); // 2 segundos visibles
+//});
 
 
   // Menu Toggle
