@@ -88,8 +88,15 @@ body {
 .menu-toggle span {
     width: 25px;
     height: 2px;
-    background: var(--text-white);
+    background: var(--text-dark); /* visible sobre header blanco */
     transition: all 0.3s;
+}
+
+/* Mejora de accesibilidad: foco visible */
+.menu-toggle:focus-visible {
+    outline: 3px solid rgba(0,83,73,0.15);
+    border-radius: 6px;
+    box-shadow: 0 0 0 3px rgba(0,83,73,0.08);
 }
 
 /* Hero Section */
