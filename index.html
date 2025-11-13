@@ -72,47 +72,42 @@
 </head>
 
 <body>
-    <!-- Splash Screen (único) -->
-    <div id="splash">
-        <img src="img/logoweb.jpg" alt="Arquitecto MAHE Arquitectura Villa Carlos Paz, Cordoba" class="splash-logo">
-    </div>
+  <!-- Splash Screen (único, no lazy) -->
+  <div id="splash">
+    <img src="img/logoweb.jpg" alt="Arquitecto MAHE Arquitectura Villa Carlos Paz, Cordoba" class="splash-logo">
+  </div>
 
-    <!-- Tu contenido principal -->
-    <div id="main-content" style="display: none;">
-    <!-- TODO el resto de tu sitio -->
-    </div>
-    <!-- Splash Screen -->
-
+  <!-- Contenido principal (oculto hasta window.load) -->
+  <div id="main-content" style="display: none;">
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="img/logoweb.jpg" alt="logo Arquitecto MAHE Arquitectura Villa Carlos Paz, Córdoba">
-            </div>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logoweb.jpg" alt="logo Arquitecto MAHE Arquitectura Villa Carlos Paz, Córdoba">
         </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Diseñamos hogares pensando en vos, en tu experiencia y en cada detalle que los hace únicos</h1>
-                    <p>Con un proceso ágil y participativo, tecnología de vanguardia y un equipo de profesionales comprometidos, transformamos tus ideas en un proyecto que podés ver, sentir y disfrutar antes de hacerlo realidad.</p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary asesorateBtn">ASESORATE</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="img/portada.jpg" alt="portada Arquitecto MAHE Arquitectura Villa Carlos Paz, Córdoba">
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Diseñamos hogares pensando en vos, en tu experiencia y en cada detalle que los hace únicos</h1>
+            <p>Con un proceso ágil y participativo, tecnología de vanguardia y un equipo de profesionales comprometidos, transformamos tus ideas en un proyecto que podés ver, sentir y disfrutar antes de hacerlo realidad.</p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary asesorateBtn">ASESORATE</button>
             </div>
+          </div>
+          <div class="hero-image">
+            <!-- Hero: prefer eager for LCP -->
+            <img src="img/portada.jpg" alt="portada Arquitecto MAHE Arquitectura Villa Carlos Paz, Córdoba" loading="eager">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Stats Section -->
@@ -147,13 +142,13 @@
                 <div class="method-card">
                     <div class="method-card-inner">
                         <div class="method-icon">
-                            <img src="img/iconoe1.jpg" alt="icon Reunión Arquitectura">
+                            <img src="img/iconoe1.jpg" alt="icon Reunión Arquitectura" loading="lazy">
                         </div>
                         <h3>Reunión</h3>
                         <p>Donde nos conocemos. Nos contás cómo te gusta vivir, qué necesitás y qué ideas tenés. También vemos tu terreno y analizamos sus pendientes, orientaciones y posibilidades.</p>
                     </div>
                     <div class="method-image">
-                        <img src="img/etapa1.jpg" alt="image Reunión Arquitectura">
+                        <img src="img/etapa1.jpg" alt="image Reunión Arquitectura" loading="lazy">
                     </div>
                 </div>
 
@@ -166,7 +161,7 @@
                         <p>Con toda la información de la reunión armamos una propuesta que combine funcionalidad, estética y eficiencia. Te mostramos planos, modelados 3D y renders para que entiendas mejor la propuesta. En esta etapa hacemos todas las correcciones necesarias hasta llegar al diseño final.</p>
                     </div>
                     <div class="method-image">
-                        <img src="img/etapa2.jpg"    alt="image Anteproyecto Arquitectura">
+                        <img src="img/etapa2.jpg"    alt="image Anteproyecto Arquitectura" loading="lazy">
                     </div>
                 </div>
 
@@ -179,7 +174,7 @@
                         <p>Nos encargamos de elaborar toda la documentación técnica y de gestionar los permisos necesarios para que puedas comenzar a construir.</p>
                     </div>
                     <div class="method-image">
-                        <img src="img/etapa3.jpg" alt="image Proyecto Arquitectura">
+                        <img src="img/etapa3.jpg" alt="image Proyecto Arquitectura" loading="lazy">
                     </div>
                 </div>
 
@@ -192,7 +187,7 @@
                         <p>Te acompañamos durante toda la obra con dirección y asesoramiento técnico. Controlamos que todo se haga como lo proyectamos y además nos ocupamos de presupuestos, compras y gestión de equipos.</p>
                     </div>
                     <div class="method-image">
-                        <img src="img/etapa4.jpg" alt="image Construcción Arquitectura">
+                        <img src="img/etapa4.jpg" alt="image Construcción Arquitectura" loading="lazy">
                     </div>
                 </div>
 
@@ -256,49 +251,49 @@
             <div class="container">
                 <div class="gallery-container">
                 <div class="slide fade">
-                    <img src="img/galeria1.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 1">
+                    <img src="img/galeria1.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 1" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria2.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 2">
+                    <img src="img/galeria2.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 2" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria3.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 3">
+                    <img src="img/galeria3.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 3" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria4.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 4">
+                    <img src="img/galeria4.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 4" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria5.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 5">
+                    <img src="img/galeria5.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 5" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria6.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 6">
+                    <img src="img/galeria6.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 6" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria7.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 7">
+                    <img src="img/galeria7.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 7" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria8.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 8">
+                    <img src="img/galeria8.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 8" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria9.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 9">
+                    <img src="img/galeria9.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 9" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria10.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 10">
+                    <img src="img/galeria10.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 10" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria11.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 11">
+                    <img src="img/galeria11.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 11" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria12.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 12">
+                    <img src="img/galeria12.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 12" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria13.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 13">
+                    <img src="img/galeria13.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 13" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria14.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 14">
+                    <img src="img/galeria14.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 14" loading="lazy">
                 </div>
                 <div class="slide fade">
-                    <img src="img/galeria15.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 15">
+                    <img src="img/galeria15.jpg" alt="Arquitecto Arquitectura Moderna Villa Carlos Paz, Córdoba 15" loading="lazy">
                 </div>
 
                 <!-- Flechas -->
@@ -412,7 +407,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="img/logoweb.png" alt="logo Arquitecto MAHE Arquitectura">
+                    <img src="img/logoweb.png" alt="logo Arquitecto MAHE Arquitectura" loading="lazy">
                     <p class="footer-social-label">Seguinos en nuestras redes</p>
                     <div class="social-links">
                         <a href="https://www.instagram.com/mahe.arquitectos/" target="_blank" aria-label="Instagram">
@@ -462,6 +457,6 @@
         </svg>
     </a>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
