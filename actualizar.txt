@@ -22,3 +22,10 @@ git commit -m "Actualizo sitio web mahearquitectos.com"
 
 git branch -M main
 git push -u origin main
+
+
+FORZAR 
+
+git add .
+git commit -m "subida forzada"
+git push origin main --force
