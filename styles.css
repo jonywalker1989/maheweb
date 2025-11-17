@@ -92,7 +92,7 @@ body {
 .menu-toggle span {
     width: 25px;
     height: 2px;
-    background: var(--text-dark); /* visible sobre header blanco */
+    background: var(--text-white); /* visible sobre header blanco */
     transition: all 0.3s;
 }
 
