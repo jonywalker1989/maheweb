@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
       setTimeout(() => {
         if (splash.parentNode) splash.parentNode.removeChild(splash);
       }, 700); // eliminación tras el fade (600ms) + buffer
-    }, 2000); // <-- duración visible: 2000ms
+    }, 1500); // <-- duración visible: 2000ms
   }
 
   if (main) main.style.display = 'block';
